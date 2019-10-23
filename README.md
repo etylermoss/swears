@@ -1,6 +1,16 @@
 # Swear word list
 
-This simple Node project generates a plain swear words list (output.txt) file that can easily be matched against.
+This simple Node project generates a plain swear words list file (swears.txt) that can easily be matched against.
+
+### Instructions:
+
+Use swears.txt, or, to generate it again:
+
+```bash
+git clone https://github.com/ajmar/swears.git
+npm i
+node index.js
+```
 
 The swear word lists are sourced from:
 * swears\_1.js: `https://github.com/reimertz/curse-words/blob/master/index.js` 
