@@ -8,8 +8,8 @@ Use swears.txt, or, to generate it again:
 
 ```bash
 git clone https://github.com/ajmar/swears.git
-npm i
-node index.js
+npm install
+npm run build
 ```
 
 The swear word lists are sourced from:
