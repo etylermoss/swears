@@ -19,6 +19,14 @@ swears = swears.filter((i) => {
 	return present.hasOwnProperty(i) ? false : (present[i] = true);
 });
 
+/* Remove empty / falsy elements from the array */
+swears = swears.filter((i) => {
+  return i;
+});
+
+/* Sort the array alphabetically */
+swears.sort();
+
 /* Write the array to a file */
 arrayToTxtFile(swears, './swears.txt', err => {
     if(err) {
