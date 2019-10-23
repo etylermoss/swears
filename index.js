@@ -1,8 +1,8 @@
 const fs = require('fs');
 const arrayToTxtFile = require('array-to-txt-file');
-const swears_1 = require('./swears_1.js');
-const swears_2 = require('./swears_2.js');
-const swears_3 = fs.readFileSync('swears_3.txt').toString().split("\n");
+const swears_1 = require('./inputs/swears_1.js');
+const swears_2 = require('./inputs/swears_2.js');
+const swears_3 = fs.readFileSync('./inputs/swears_3.txt').toString().split("\n");
 
 let swears = [
 	...swears_1,
@@ -20,7 +20,7 @@ swears = swears.filter((i) => {
 });
 
 /* Write the array to a file */
-arrayToTxtFile(swears, './output.txt', err => {
+arrayToTxtFile(swears, './swears.txt', err => {
     if(err) {
       console.error(err)
       return
